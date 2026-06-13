@@ -22,7 +22,7 @@ export function DetailView({ ip, onClose }: Props) {
   useEffect(() => {
     setHistory(null);
     setError(null);
-    fetch(`http://localhost:8000/api/devices/${ip}/history`)
+    fetch(`http://localhost:8002/api/devices/${ip}/history`)
       .then(r => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return r.json() as Promise<DeviceHistory>;

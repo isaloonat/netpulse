@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Device, WsMessage } from '../types';
 
-const WS_URL = 'ws://localhost:8000/ws';
+const WS_URL = 'ws://localhost:8002/ws';
 const SPARKLINE_MAX = 20;
 
 export interface DeviceState extends Device {
